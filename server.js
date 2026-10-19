@@ -6,7 +6,7 @@ const app = express();
 app.disable('x-powered-by');
 const stripeKey = process.env.STRIPE_SECRET_KEY;
 const stripe = stripeKey ? new Stripe(stripeKey) : null;
-const designs = ['Classic Skull', 'BEER’D Cap', 'Dance Dad', 'Clean Skull'];
+const designs = const designs = ['Classic Skull', 'BEER’D Cap', 'BEER’D Original Beard', 'Clean Skull'];;
 const types = [
   { name: 'Graphic Tee', cents: 2800 },
   { name: 'Die-Cut Sticker', cents: 600 },
